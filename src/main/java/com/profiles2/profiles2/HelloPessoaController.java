@@ -18,7 +18,7 @@ public class HelloPessoaController {
 
     @GetMapping("/pessoa/")
     @ResponseBody
-    public String listPessoaByName(@RequestParam(required = false, defaultValue = "") String name) {
+    public String hello(@RequestParam(required = false, defaultValue = "") String name) {
         return String.format("Olá %s, tudo bem com você?", name);
     }
 }
