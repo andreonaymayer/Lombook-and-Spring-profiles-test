@@ -1,5 +1,6 @@
-package com.profiles2.profiles2;
+package com.profiles2.profiles2.Controller;
 
+import com.profiles2.profiles2.Service.PessoaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Profile;

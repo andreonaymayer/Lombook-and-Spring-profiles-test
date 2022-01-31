@@ -1,5 +1,7 @@
-package com.profiles2.profiles2;
+package com.profiles2.profiles2.Service;
 
+import com.profiles2.profiles2.Pessoa;
+import com.profiles2.profiles2.PessoaRepo;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
