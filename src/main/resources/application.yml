@@ -1,5 +1,5 @@
 amazonProperties:
-  endpointUrl: https://andreotest.s3.sa-east-1.amazonaws.com/
+  endpointUrl: https://andreotest.s3.sa-east-1.amazonaws.com
   accessKey: AKIA2U3IDMWMH2JONKX5
   secretKey: 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
   bucketName: andreotest

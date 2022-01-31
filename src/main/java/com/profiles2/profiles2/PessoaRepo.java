@@ -12,11 +12,11 @@ public class PessoaRepo {
     private List<Pessoa> turma = new ArrayList<>();
 
     public PessoaRepo() {
-        turma.add(new Pessoa("Andreo", 24,""));
-        turma.add(new Pessoa("Jose", 70,""));
-        turma.add(new Pessoa("Edgar", 50,""));
-        turma.add(new Pessoa("Gabriel", 29,""));
-        turma.add(new Pessoa("Andressa", 27,""));
+        turma.add(new Pessoa("Andreo", 24, ""));
+        turma.add(new Pessoa("Jose", 70, ""));
+        turma.add(new Pessoa("Edgar", 50, ""));
+        turma.add(new Pessoa("Gabriel", 29, ""));
+        turma.add(new Pessoa("Andressa", 27, ""));
     }
 
 }

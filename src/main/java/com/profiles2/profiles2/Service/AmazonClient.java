@@ -32,6 +32,8 @@ public class AmazonClient {
     private String bucketName;
     @org.springframework.beans.factory.annotation.Value("${amazonProperties.accessKey}")
     private String accessKey;
+    @Value("${amazonProperties.secretKey}")
+    private String secretKey;
 
     @PostConstruct
     private void initializeAmazon() {
@@ -52,9 +54,6 @@ public class AmazonClient {
         }
         return fileUrl;
     }
-
-    @Value("${amazonProperties.secretKey}")
-    private String secretKey;
 
     private File convertMultiPartToFile(MultipartFile file) throws IOException {
         File convFile = new File(file.getOriginalFilename());
@@ -79,14 +78,14 @@ public class AmazonClient {
         return "Successfully deleted";
     }
 
-    public String listFiles () {
+    public String listFiles() {
         String bucket_name = "andreotest";
         String list = "";
         System.out.format("Objects in S3 bucket %s:\n", bucket_name);
         final AmazonS3 s3 = AmazonS3ClientBuilder.standard().withRegion(Regions.SA_EAST_1).build();
         ListObjectsV2Result result = s3.listObjectsV2(bucket_name);
         List<S3ObjectSummary> objects = result.getObjectSummaries();
-        if (objects.isEmpty()){
+        if (objects.isEmpty()) {
             return "We dont have objects to list. :( ";
         }
 

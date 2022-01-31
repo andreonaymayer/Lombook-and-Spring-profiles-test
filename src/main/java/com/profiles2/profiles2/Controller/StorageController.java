@@ -35,7 +35,7 @@ public class StorageController {
     }
 
     @GetMapping("/listfiles")
-    public String listfiles (){
+    public String listfiles() {
         return this.amazonClient.listFiles();
     }
 }
